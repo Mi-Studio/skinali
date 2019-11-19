@@ -127,11 +127,13 @@ body .button {
   transition: 0.2s;
   -webkit-transform: translateY(-200%);
           transform: translateY(-200%);
+  opacity: 0;
 }
 
 .menu_active {
   -webkit-transform: translateY(0);
           transform: translateY(0);
+  opacity: 1;
 }
 
 .menu__nav {
@@ -229,8 +231,8 @@ body .button {
   background: #f1f1f1 url("../../img/hero/hero-bg.jpg") no-repeat center top;
   background-size: cover;
   margin-top: 80px;
-  padding-top: 80px;
-  padding-bottom: 273px;
+  padding-top: 120px;
+  padding-bottom: 270px;
 }
 
 .hero__title {
@@ -248,8 +250,8 @@ body .button {
 
 @media (max-width: 991px) {
   .hero {
-    background-size: cover;
-    position: top left 30%;
+    background-size: 100%;
+    position: top right;
   }
 }
 /*# sourceMappingURL=style.css.map */
