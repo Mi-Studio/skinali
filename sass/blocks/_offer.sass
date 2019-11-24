@@ -1,11 +1,15 @@
 .offer
   padding: 129px
   &-block
-    background: #fff url('../img/offer/form-bg.png') no-repeat center right
-    background-size: contain
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1)
     padding: 80px
     margin-top: -200px
+    &_calc-bg
+      background: #fff url('../img/offer/form-bg-calc.png') no-repeat center right
+      background-size: contain
+    &_price-bg
+      background: #fff url('../img/offer/form-bg-price.png') no-repeat center right
+      background-size: contain
   &__title
     font-size: 25px
     text-transform: uppercase
@@ -15,13 +19,14 @@
     display: block
     font-size: 21px
     margin-bottom: 48px
+    max-width: 600px
 .form
   &__row
     display: flex
-    justify-content: space-between
+    justify-content: flex-start
     align-items: center
     max-width: 900px
-    margin-bottom: 25px
+    margin-bottom: 30px
     &:last-child
       margin-bottom: 0
   &__label
@@ -40,17 +45,23 @@
     width: 100%
   &__justify
     justify-content: flex-start
+  &__policy
+    display: inline-block
+    margin-left: 35px
+    font-size: 17px
 @media (max-width: 1199px)
   .offer
     &-block
       background-position: center right -120px
-@media (max-width: 1199px)
+@media (max-width: 991px)
   .offer
-    padding: 10px
     &-block
       background: none
       background-color: #fff
       padding: 40px
+@media (max-width: 768px)
+  .offer
+    padding: 10px
     &__title
       font-size: 18px
     &__subtitle
@@ -65,6 +76,9 @@
       width: 100%
     &__input
       margin-bottom: 20px
+    &__policy
+      margin-left: 0
+      margin-top: 30px
 @media (max-width: 480px)
   .form
     &__row
