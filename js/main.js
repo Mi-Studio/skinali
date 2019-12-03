@@ -30,4 +30,15 @@ $(window).load(function () {
     return false;
    });
    $('input[type="tel"]').mask("+7 (999) 999-99-99");
+   /* Показывать карту, только когда докрутили до нее*/
+   var reviews = $('.reviews');
+   var reviewsTop = reviews.offset().top;
+   $(window).bind('scroll', function(){
+    var windowTop = $(this).scrollTop();
+    if (windowTop > reviewsTop) {
+      console.log('Докрутили');
+      $('#map').html('<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A8937a8501e36665a6b75072268a427496e8419c2baf7d812470ad3d9153e9a48&amp;width=100%25&amp;height=410&amp;lang=ru_RU&amp;scroll=false"></script>')
+      $(window).unbind('scroll')
+    }
+   });
 });
