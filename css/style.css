@@ -660,6 +660,15 @@ input[type="checkbox"]:checked + label:before {
   }
 }
 
+@media (max-width: 768px) {
+  .section {
+    padding: 60px 0;
+  }
+  .select {
+    margin-bottom: 10px;
+  }
+}
+
 .navbar {
   position: fixed;
   left: 0;
@@ -869,6 +878,7 @@ input[type="checkbox"]:checked + label:before {
 .offer-block_price-bg {
   background: #fff url("../img/offer/form-bg-price.png") no-repeat center right;
   background-size: contain;
+  margin-top: -40px;
 }
 
 .offer__title {
@@ -1035,9 +1045,16 @@ input[type="checkbox"]:checked + label:before {
 
 @media (max-width: 768px) {
   .features-block__item {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    margin-bottom: 60px;
+  }
+}
+
+@media (max-width: 320px) {
+  .features-block__item {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
-    margin-bottom: 50px;
   }
 }
 
@@ -1208,6 +1225,15 @@ input[type="checkbox"]:checked + label:before {
   }
 }
 
+@media (max-width: 480px) {
+  .blog__heading {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .price-block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1346,6 +1372,7 @@ input[type="checkbox"]:checked + label:before {
   .step {
     -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
+    margin-bottom: 60px;
   }
 }
 
@@ -1356,14 +1383,14 @@ input[type="checkbox"]:checked + label:before {
   }
 }
 
-.before-slider-wrap {
+.slider-wrap {
   max-width: 640px;
   margin: auto;
   position: relative;
   z-index: 99;
 }
 
-.before-slider-arrows {
+.slider-arrows {
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1378,7 +1405,7 @@ input[type="checkbox"]:checked + label:before {
           transform: translateY(-100%);
 }
 
-.before-slider__dots {
+.slider__dots {
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1394,7 +1421,7 @@ input[type="checkbox"]:checked + label:before {
   margin-top: 30px;
 }
 
-.before-slider__dots li {
+.slider__dots li {
   width: 10px;
   height: 10px;
   background-color: #d1d1d1;
@@ -1402,15 +1429,15 @@ input[type="checkbox"]:checked + label:before {
   margin: 5px;
 }
 
-.before-slider__dots li:hover {
+.slider__dots li:hover {
   cursor: pointer;
 }
 
-.before-slider__dots li.slick-active {
+.slider__dots li.slick-active {
   background-color: #5b7fda;
 }
 
-.before-slider__dots button {
+.slider__dots button {
   display: none;
 }
 
@@ -1432,6 +1459,12 @@ input[type="checkbox"]:checked + label:before {
 .arrow-right {
   -webkit-transform: translateX(200%);
           transform: translateX(200%);
+}
+
+@media (max-width: 480px) {
+  .slider-arrows {
+    display: none;
+  }
 }
 
 .twentytwenty-horizontal .twentytwenty-handle:before, .twentytwenty-horizontal .twentytwenty-handle:after, .twentytwenty-vertical .twentytwenty-handle:before, .twentytwenty-vertical .twentytwenty-handle:after {
@@ -1692,7 +1725,19 @@ input[type="checkbox"]:checked + label:before {
 }
 
 .reviews-slider__item {
-  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .reviews-slider__image {
@@ -1747,6 +1792,21 @@ input[type="checkbox"]:checked + label:before {
 
 .factory-block__image {
   margin: 20px 0;
+}
+
+@media (max-width: 768px) {
+  .factory-block__text {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .factory-block__text {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    padding: 0 10px;
+    font-size: 18px;
+  }
 }
 
 .contacts {
@@ -1817,6 +1877,15 @@ input[type="checkbox"]:checked + label:before {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+
+@media (max-width: 480px) {
+  .questions-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .footer {

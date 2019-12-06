@@ -3,10 +3,10 @@ $(window).load(function () {
     before_label: 'Без скинали', // Set a custom before label
     after_label: 'Со скинали' // Set a custom after label
   });
-  $('.before-slider').slick({
+  $('.slider').slick({
     draggable: false,
     dots: true,
-    dotsClass: 'before-slider__dots',
+    dotsClass: 'slider__dots',
     prevArrow: $('.arrow-left'),
     nextArrow: $('.arrow-right')
   });
